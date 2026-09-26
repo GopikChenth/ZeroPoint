@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 130" width="100%" height="100%">
+  <title>01 // Weapons &amp; Combat Systems</title>
+  <defs>
+    <linearGradient id="secGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0E141D" />
+      <stop offset="60%" stop-color="#0B0F15" />
+      <stop offset="100%" stop-color="#070A0F" />
+    </linearGradient>
+    <pattern id="secGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#16202C" stroke-width="0.8" />
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="130" rx="8" fill="url(#secGrad1)" />
+  <rect width="1200" height="130" rx="8" fill="url(#secGrid)" opacity="0.4" />
+  <rect x="2" y="2" width="1196" height="126" rx="6" fill="none" stroke="#223042" stroke-width="1.2" />
+
+  <!-- Tactical Accent Left Strip -->
+  <rect x="16" y="22" width="6" height="86" rx="2" fill="#FF9500" />
+
+  <!-- Section Index & Title -->
+  <g transform="translate(42, 38)">
+    <text x="0" y="24" font-family="'Consolas', monospace" font-size="14" font-weight="700" fill="#FF9500" letter-spacing="3">SECTION 01 // ARSENAL</text>
+    <text x="0" y="64" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="36" font-weight="900" fill="#FFFFFF" letter-spacing="1.5">COMBAT &amp; WEAPON SYSTEMS</text>
+  </g>
+
+  <!-- Right Side Decorative Callout -->
+  <g transform="translate(860, 48)">
+    <rect x="0" y="0" width="290" height="36" rx="4" fill="#141D29" stroke="#26364C" stroke-width="1" />
+    <circle cx="18" cy="18" r="4" fill="#00D2FF" />
+    <text x="32" y="23" font-family="'Consolas', monospace" font-size="12" font-weight="700" fill="#CBD5E1" letter-spacing="1">MODULAR BALLISTICS ENGINE</text>
+  </g>
+</svg>

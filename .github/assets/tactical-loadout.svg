@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="100%" height="100%">
+  <title>Tactical Loadout &amp; Weapon Architecture</title>
+  <defs>
+    <linearGradient id="diagGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090D13" />
+      <stop offset="100%" stop-color="#0F1622" />
+    </linearGradient>
+    <pattern id="diagGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#162232" stroke-width="0.8" opacity="0.5" />
+    </pattern>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="480" rx="10" fill="url(#diagGrad)" />
+  <rect width="1200" height="480" rx="10" fill="url(#diagGrid)" />
+  <rect x="2" y="2" width="1196" height="476" rx="8" fill="none" stroke="#223246" stroke-width="1.2" />
+
+  <!-- Diagram Header -->
+  <g transform="translate(40, 36)">
+    <text x="0" y="16" font-family="'Consolas', monospace" font-size="12" font-weight="700" fill="#FF9500" letter-spacing="2">SYSTEM TELEMETRY // LOADOUT SPECIFICATIONS</text>
+    <text x="0" y="44" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="900" fill="#FFFFFF">TACTICAL ARMORY &amp; ATTACHMENT SOCKET ARCHITECTURE</text>
+  </g>
+
+  <!-- 3 Weapon Spec Cards -->
+  
+  <!-- CARD 1: PRIMARY AR-01 -->
+  <g transform="translate(40, 100)">
+    <rect width="350" height="340" rx="6" fill="#111722" stroke="#243346" stroke-width="1" />
+    <!-- Top Chamfer Accent -->
+    <rect x="0" y="0" width="120" height="4" fill="#FF9500" />
+    
+    <text x="24" y="36" font-family="'Consolas', monospace" font-size="11" font-weight="700" fill="#FF9500">LOADOUT SLOT 01</text>
+    <text x="24" y="64" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800" fill="#FFFFFF">ASSAULT RIFLE [AR-01]</text>
+    <text x="24" y="86" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#8CA0B8">Standard Issue 5.56x45mm NATO Platform</text>
+    
+    <line x1="24" y1="104" x2="326" y2="104" stroke="#1D2A3A" stroke-width="1" />
+
+    <!-- Stat Bars -->
+    <!-- Damage -->
+    <text x="24" y="132" font-family="'Consolas', monospace" font-size="11" fill="#718298">DAMAGE</text>
+    <rect x="130" y="122" width="190" height="10" rx="2" fill="#1B2636" />
+    <rect x="130" y="122" width="142" height="10" rx="2" fill="#FF9500" />
+
+    <!-- Fire Rate -->
+    <text x="24" y="162" font-family="'Consolas', monospace" font-size="11" fill="#718298">FIRE RATE</text>
+    <rect x="130" y="152" width="190" height="10" rx="2" fill="#1B2636" />
+    <rect x="130" y="152" width="156" height="10" rx="2" fill="#FF9500" />
+
+    <!-- Range -->
+    <text x="24" y="192" font-family="'Consolas', monospace" font-size="11" fill="#718298">RANGE</text>
+    <rect x="130" y="182" width="190" height="10" rx="2" fill="#1B2636" />
+    <rect x="130" y="182" width="128" height="10" rx="2" fill="#FF9500" />
+
+    <!-- Mobility -->
+    <text x="24" y="222" font-family="'Consolas', monospace" font-size="11" fill="#718298">MOBILITY</text>
+    <rect x="130" y="212" width="190" height="10" rx="2" fill="#1B2636" />
+    <rect x="130" y="212" width="148" height="10" rx="2" fill="#00D2FF" />
+
+    <!-- Attachment Sockets Pill List -->
+    <g transform="translate(24, 256)">
+      <rect x="0" y="0" width="94" height="24" rx="3" fill="#182332" stroke="#2B3C52" stroke-width="0.8" />
+      <text x="10" y="16" font-family="'Consolas', monospace" font-size="10" fill="#CBD5E1">SOCKET_SCOPE</text>
+
+      <rect x="102" y="0" width="98" height="24" rx="3" fill="#182332" stroke="#2B3C52" stroke-width="0.8" />
+      <text x="112" y="16" font-family="'Consolas', monospace" font-size="10" fill="#CBD5E1">SOCKET_MUZZLE</text>
+
+      <rect x="208" y="0" width="94" height="24" rx="3" fill="#182332" stroke="#2B3C52" stroke-width="0.8" />
+      <text x="218" y="16" font-family="'Consolas', monospace" font-size="10" fill="#CBD5E1">SOCKET_MAG</text>
+    </g>
+
+    <!-- Hotkey Tag -->
+    <rect x="24" y="296" width="302" height="26" rx="4" fill="#00D2FF" fill-opacity="0.1" stroke="#00D2FF" stroke-width="0.8" />
+    <text x="96" y="313" font-family="'Consolas', monospace" font-size="11" font-weight="700" fill="#00D2FF">EQUIP VIA [1] OR [P] MENU</text>
+  </g>
+
+  <!-- CARD 2: BATTLE RIFLE AR-B -->
+  <g transform="translate(425, 100)">
+    <rect width="350" height="340" rx="6" fill="#111722" stroke="#243346" stroke-width="1" />
+    <rect x="0" y="0" width="120" height="4" fill="#38EF7D" />
+
+    <text x="24" y="36" font-family="'Consolas', monospace" font-size="11" font-weight="700" fill="#38EF7D">MODULAR VARIANT</text>
+    <text x="24" y="64" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800" fill="#FFFFFF">HEAVY AR [AR-B]</text>
+    <text x="24" y="86" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#8CA0B8">Modular Spec-Ops 7.62x51mm Heavy Platform</text>
+    
+    <line x1="24" y1="104" x2="326" y2="104" stroke="#1D2A3A" stroke-width="1" />
+
+    <!-- Stat Bars -->
+    <text x="24" y="132" font-family="'Consolas', monospace" font-size="11" fill="#718298">DAMAGE</text>
+    <rect x="130" y="122" width="190" height="10" rx="2" fill="#1B2636" />
+    <rect x="130" y="122" width="176" height="10" rx="2" fill="#38EF7D" />
+
+    <text x="24" y="162" font-family="'Consolas', monospace" font-size="11" fill="#718298">FIRE RATE</text>
+    <rect x="130" y="152" width="190" height="10" rx="2" fill="#1B2636" />
+    <rect x="130" y="152" width="124" height="10" rx="2" fill="#38EF7D" />
+
+    <text x="24" y="192" font-family="'Consolas', monospace" font-size="11" fill="#718298">RANGE</text>
+    <rect x="130" y="182" width="190" height="10" rx="2" fill="#1B2636" />
+    <rect x="130" y="182" width="168" height="10" rx="2" fill="#38EF7D" />
+
+    <text x="24" y="222" font-family="'Consolas', monospace" font-size="11" fill="#718298">MOBILITY</text>
+    <rect x="130" y="212" width="190" height="10" rx="2" fill="#1B2636" />
+    <rect x="130" y="212" width="118" height="10" rx="2" fill="#00D2FF" />
+
+    <!-- Attachment Sockets Pill List -->
+    <g transform="translate(24, 256)">
+      <rect x="0" y="0" width="94" height="24" rx="3" fill="#182332" stroke="#2B3C52" stroke-width="0.8" />
+      <text x="10" y="16" font-family="'Consolas', monospace" font-size="10" fill="#CBD5E1">SOCKET_SCOPE</text>
+
+      <rect x="102" y="0" width="98" height="24" rx="3" fill="#182332" stroke="#2B3C52" stroke-width="0.8" />
+      <text x="112" y="16" font-family="'Consolas', monospace" font-size="10" fill="#CBD5E1">SOCKET_BARREL</text>
+
+      <rect x="208" y="0" width="94" height="24" rx="3" fill="#182332" stroke="#2B3C52" stroke-width="0.8" />
+      <text x="218" y="16" font-family="'Consolas', monospace" font-size="10" fill="#CBD5E1">SOCKET_GRIP</text>
+    </g>
+
+    <rect x="24" y="296" width="302" height="26" rx="4" fill="#38EF7D" fill-opacity="0.1" stroke="#38EF7D" stroke-width="0.8" />
+    <text x="86" y="313" font-family="'Consolas', monospace" font-size="11" font-weight="700" fill="#38EF7D">COMPATIBLE WITH WEAPON PACK 1</text>
+  </g>
+
+  <!-- CARD 3: TACTICAL SIDEARM HANDGUN-03 -->
+  <g transform="translate(810, 100)">
+    <rect width="350" height="340" rx="6" fill="#111722" stroke="#243346" stroke-width="1" />
+    <rect x="0" y="0" width="120" height="4" fill="#00D2FF" />
+
+    <text x="24" y="36" font-family="'Consolas', monospace" font-size="11" font-weight="700" fill="#00D2FF">LOADOUT SLOT 02</text>
+    <text x="24" y="64" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800" fill="#FFFFFF">SIDEARM [HG-03]</text>
+    <text x="24" y="86" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#8CA0B8">Quick-Draw 9mm Semi-Automatic Pistol</text>
+    
+    <line x1="24" y1="104" x2="326" y2="104" stroke="#1D2A3A" stroke-width="1" />
+
+    <!-- Stat Bars -->
+    <text x="24" y="132" font-family="'Consolas', monospace" font-size="11" fill="#718298">DAMAGE</text>
+    <rect x="130" y="122" width="190" height="10" rx="2" fill="#1B2636" />
+    <rect x="130" y="122" width="94" height="10" rx="2" fill="#00D2FF" />
+
+    <text x="24" y="162" font-family="'Consolas', monospace" font-size="11" fill="#718298">FIRE RATE</text>
+    <rect x="130" y="152" width="190" height="10" rx="2" fill="#1B2636" />
+    <rect x="130" y="152" width="138" height="10" rx="2" fill="#00D2FF" />
+
+    <text x="24" y="192" font-family="'Consolas', monospace" font-size="11" fill="#718298">RANGE</text>
+    <rect x="130" y="182" width="190" height="10" rx="2" fill="#1B2636" />
+    <rect x="130" y="182" width="82" height="10" rx="2" fill="#00D2FF" />
+
+    <text x="24" y="222" font-family="'Consolas', monospace" font-size="11" fill="#718298">MOBILITY</text>
+    <rect x="130" y="212" width="190" height="10" rx="2" fill="#1B2636" />
+    <rect x="130" y="212" width="182" height="10" rx="2" fill="#00D2FF" />
+
+    <!-- Attachment Sockets Pill List -->
+    <g transform="translate(24, 256)">
+      <rect x="0" y="0" width="94" height="24" rx="3" fill="#182332" stroke="#2B3C52" stroke-width="0.8" />
+      <text x="10" y="16" font-family="'Consolas', monospace" font-size="10" fill="#CBD5E1">SOCKET_LASER</text>
+
+      <rect x="102" y="0" width="98" height="24" rx="3" fill="#182332" stroke="#2B3C52" stroke-width="0.8" />
+      <text x="112" y="16" font-family="'Consolas', monospace" font-size="10" fill="#CBD5E1">SOCKET_EJECT</text>
+
+      <rect x="208" y="0" width="94" height="24" rx="3" fill="#182332" stroke="#2B3C52" stroke-width="0.8" />
+      <text x="218" y="16" font-family="'Consolas', monospace" font-size="10" fill="#CBD5E1">FAST_RELOAD</text>
+    </g>
+
+    <rect x="24" y="296" width="302" height="26" rx="4" fill="#00D2FF" fill-opacity="0.1" stroke="#00D2FF" stroke-width="0.8" />
+    <text x="96" y="313" font-family="'Consolas', monospace" font-size="11" font-weight="700" fill="#00D2FF">EQUIP VIA [2] OR [P] MENU</text>
+  </g>
+</svg>
